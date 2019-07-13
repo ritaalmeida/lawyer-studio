@@ -9,3 +9,14 @@
 body {
   background-color: var(--background);
 }
+
+i.fas {
+  display: block;
+}
+
+.list-services{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+}
