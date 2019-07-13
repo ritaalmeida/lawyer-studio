@@ -1,11 +1,66 @@
 :root {
-  --primary: #989898;
-  --secundary: #717170;
-  --optional: #4D4D4D;
+  --grey-lighter: #B9B9B9;
+  --grey-light: #989898;
+  --grey-dark: #717170;
+  --grey-darker: #4D4D4D;
   --black: #1A1919;
-  --background: #B9B9B9;
+  --background: #FFFFFF;
+
+  --title-font-size: 25px;
+  --title-color: var(--optional);
+
+  --main-font-family: 'Literata', serif;
+  --secundary-font-family: 'Didact Gothic', sans-serif;
 }
 
 body {
+  margin: 0;
+  font-family: var(--main-font-family);
   background-color: var(--background);
+}
+
+section {
+  margin: 16px;
+}
+
+.container {
+  padding: 16px;
+}
+
+.bio__container {
+  background-color: var(--grey-light);
+}
+
+.bio__data {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bio__title {
+  color: var(--title-color);
+  font-size: var(--title-font-size);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bio__name {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: var(--secundary-font-family);
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.bio__description {
+  align-self: center;
+  white-space: pre-line;
+}
+
+.bio__photo {
+  width: 300px;
+  margin-right: 50px;
+
+  border-radius: 50%;
+  border: 8px solid var(--optional);
 }
