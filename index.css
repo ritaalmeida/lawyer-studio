@@ -1,16 +1,16 @@
 :root {
-  --grey-lighter: #B9B9B9;
-  --grey-light: #989898;
-  --grey-dark: #717170;
-  --grey-darker: #4D4D4D;
+  --lighter: #B9B9B9;
+  --light: #989898;
+  --dark: #717170;
+  --darker: #4D4D4D;
   --black: #1A1919;
   --background: #FFFFFF;
 
   --title-font-size: 25px;
-  --title-color: var(--optional);
 
   --main-font-family: 'Literata', serif;
-  --secundary-font-family: 'Didact Gothic', sans-serif;
+  --secundary-font-family: 'Oswald', sans-serif;
+  --optional-font-family: 'Didact Gothic', sans-serif;
 }
 
 body {
@@ -34,22 +34,87 @@ section {
   margin: 16px;
 }
 
+section:first-child {
+  height: calc(100vh - 32px);
+}
+
+section:first-child .container {
+  height: calc(100% - 32px);
+}
+
 .container {
   padding: 16px;
 }
 
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--lighter);
+}
+
+.home__name {
+  color: var(--darker);
+  font-size: 50px;
+  font-family: var(--optional-font-family);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.home__job {
+  font-family: var(--secundary-font-family);
+  letter-spacing: 35px;
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+.home__dot-job {
+  position: absolute;
+  width: fit-content;
+  letter-spacing: 0;
+}
+
+.home__arrow {
+  position: absolute;
+  bottom: 200px;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-color: var(--dark);
+
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  to {
+    transform: translate(0, 100px) rotate(45deg);
+  }
+}
+
 .bio__container {
-  background-color: var(--grey-light);
+  background-color: var(--light);
 }
 
 .bio__data {
   padding: 16px 32px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;;
 }
 
 .bio__title {
-  color: var(--title-color);
+  color: var(--lighter);
   font-size: var(--title-font-size);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -73,5 +138,5 @@ section {
   margin-right: 50px;
 
   border-radius: 50%;
-  border: 8px solid var(--optional);
+  border: 8px solid var(--darker);
 }
