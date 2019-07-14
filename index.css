@@ -40,9 +40,20 @@ section:first-child .container {
 
 /* Add a black background color to the top navigation */
 .navbar {
-  background-color: #333;
+  position: absolute;
+  background-color: transparent;
   overflow: hidden;
 }
+
+.navbar--sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 2;
+  background-color: var(--darker);
+}
+
 
 /* Style the links inside the navigation bar */
 .navbar-item {
