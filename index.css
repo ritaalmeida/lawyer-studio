@@ -70,14 +70,19 @@ section:first-child .container {
 }
 
 .home__job {
+  position: relative;
+  align-self: center;
+  width: fit-content;
   font-family: var(--secundary-font-family);
-  letter-spacing: 2rem;
+  letter-spacing: 2.2rem;
   font-size: 5.625rem;
   text-transform: uppercase;
 }
 
 .home__dot-job {
   position: absolute;
+  top: 0;
+  right: 8px;
   width: fit-content;
   letter-spacing: 0;
 }
@@ -177,7 +182,12 @@ section:first-child .container {
   }
 
   .home__job {
-    font-size: 2rem;
+    font-size: 3.1rem;
+    letter-spacing: 1.5rem;
+  }
+
+  .home__dot-job {
+    right: 0;
   }
 }
 
