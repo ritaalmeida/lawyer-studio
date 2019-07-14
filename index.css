@@ -24,30 +24,6 @@ i.fas {
   display: block;
 }
 
-.services__container {
-  background-color: var(--dark);
-  color: white;
-}
-
-.services__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  text-align: center;
-}
-
-.services__title{
-  color: var(--lighter);
-  font-size: var(--title-font-size);
-  text-transform: uppercase;
-  letter-spacing: 0.0625rem;
-}
-
-.service__description {
-  align-self: center;
-  white-space: pre-line;
-}
-
 section {
   margin: 1rem;
   position: relative;
@@ -133,6 +109,30 @@ section:first-child .container {
   }
 }
 
+.services__container {
+  background-color: var(--dark);
+  color: white;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+}
+
+.services__title{
+  color: var(--lighter);
+  font-size: var(--title-font-size);
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.service__description {
+  align-self: center;
+  white-space: pre-line;
+}
+
 .bio__container {
   background-color: var(--light);
 }
@@ -169,4 +169,25 @@ section:first-child .container {
 
   border-radius: 50%;
   border: 0.5rem solid var(--darker);
+}
+
+@media screen and (max-width: 750px) {
+  .home__name {
+    font-size: 1.75rem;
+  }
+
+  .home__job {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home__name {
+    font-size: 1rem;
+  }
+
+  .home__job {
+    font-size: 1.5rem;
+    letter-spacing: 1.3rem;
+  }
 }
