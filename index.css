@@ -241,18 +241,18 @@ section:first-child .container {
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .contact__info {
   display: flex;
   flex-flow: wrap;
-  padding: 1rem 2rem 1rem 0;
+  padding: 1rem 0rem 1rem 0;
 }
 
 .contact__info-detail {
   display: flex;
   align-items: center;
-  padding-right: 2rem; 
 }
 
 .contact__input-contacts {
@@ -305,10 +305,10 @@ input:focus, textarea:focus {
 }
 
 #map{ 
-  width: 40%;
-  height: 27.7rem;
+  width: 35%;
+  height: 20rem;
   border: 0.1rem solid #AAA;
-  margin-top: 1rem;
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -319,6 +319,10 @@ input:focus, textarea:focus {
 
   .bio__description {
     margin-top: 1rem;
+  }
+  #map{ 
+    width: 70%;
+    height: 15rem;
   }
 }
 
@@ -335,6 +339,10 @@ input:focus, textarea:focus {
   .home__dot-job {
     right: 0;
   }
+  #map {
+    width: 70%;
+    height: 15rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -345,5 +353,9 @@ input:focus, textarea:focus {
   .home__job {
     font-size: 1.5rem;
     letter-spacing: 1.3rem;
+  }
+  #map {
+    width: 80%;
+    height: 10rem;
   }
 }
