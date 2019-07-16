@@ -8,6 +8,10 @@
   <link rel="stylesheet" type="text/css" href="../index.css">
   <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+  <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
+
   <script src="https://kit.fontawesome.com/35f87f623b.js"></script>
 </head>
 
@@ -52,8 +56,41 @@
   <!-- <section>
       <h1>Pricing</h1>
   </section>  -->
-<!--   <section>
-      <h1>Contact</h1>
+  <section id="contact-section" class="section">
+    <div class="contact__container container">
+      <div class="contact__title">Contact</div>
+      <hr>
+      <div class="contact__form">
+        <div>
+          <div class="contact__info">
+            <span class="contact__info-detail"><i class="fas fa-envelope fa-1x"></i>martateixeirasimoes-57779p@adv.oa.pt</span>
+            <span class="contact__info-detail"><i class="fas fa-phone fa-1x"></i>+351 910 055 084</span>
+          </div>
+          <div class="contact__info">
+            <span class="contact__info-detail"><i class="fas fa-map-marker-alt fa-1x"></i>Rua do Comendador, <br>Edifício Simões lj. nº30, 4610-580 Torrados, Felgueiras</span>
+          </div>
+          <form>
+            <div class="contact__info">
+              <input class="contact__input-contacts" type="text" name="fname" placeholder="Primeiro Nome" size="30">
+              <input class="contact__input-contacts" type="text" name="lname" placeholder="Último Nome" size="30">
+            </div>
+            <div class="contact__info">
+              <input class="contact__input-contacts" type="text" name="email" placeholder="Email" size="30">
+              <input class="contact__input-contacts" type="text" name="phone" placeholder="Telefone" size="30">
+            </div>
+            <div class="contact__info contact__info-detail">
+              <textarea rows="4" name="case" placeholder="Tell us about your case"></textarea>
+            </div>
+            <div class="contact__info">
+              <input class="contact__input-submit" type="submit" name="submit">
+            </div>
+          </form>
+        </div>
+        <div id="map"></div>
+        <script type='text/javascript' src='../assets/maps/markers.json'></script>
+        <script type='text/javascript' src='../assets/maps/leaflet.js'></script>
+      </div>
+    </div>
   </section>
- --></body>
+</body>
 </html>
