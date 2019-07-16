@@ -5,24 +5,44 @@
   <title>Marta Teixeira Sim&#245;es Advogada.</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="../index.css">
   <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
   <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
 
   <script src="https://kit.fontawesome.com/35f87f623b.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/smooth-scroll.js"></script>
+  <script src="../js/stick-navbar.js"></script>
 </head>
 
 <body>
-  <!-- <section>
-    <h1>Home</h1>
+  <section id="home-section">
+    <div class="container home__container">
+      <div class="home__name">Marta Teixeira Simões</div>
+      <div class="home__job">
+        Advogada
+        <span class="home__dot-job">.</span>
+      </div>
+
+      <a href="#services-section" class="home__arrow"></a>
+    </div>
+    <div class="diagonal-mark"></div>
   </section>
-  <section>
+
+  <div id="navbar" class="navbar">
+    <a class="navbar-item" href="#services-section">Serviços</a>
+    <a class="navbar-item" href="#bio-section">Biografia</a>
+  </div>
+
+  <!-- <section>
     <h1>About</h1>
   </section> -->
-<section id="services-section" class="section">
+  <section id="services-section">
     <div class="services__container container">
       <div class="services__title">Serviços</div>
       <hr>
@@ -31,16 +51,14 @@
         <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
         <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
         <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
-      </div>
-      <div class="services__list service__description">
         <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
         <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
         <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
-        <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>      
+        <span><i class="fas fa-gavel fa-3x"></i><p>Lorem ipsum dolor sit amet.</p></span>
       </div>
     </div>
   </section>
-  <section id="bio-section" class="section">
+  <section id="bio-section">
     <div class="container bio__container">
       <div class="bio__title">Biografia</div>
       <div class="bio__name">Marta Teixeira Simões</div>
@@ -87,8 +105,7 @@
           </form>
         </div>
         <div id="map"></div>
-        <script type='text/javascript' src='../assets/maps/markers.json'></script>
-        <script type='text/javascript' src='../assets/maps/leaflet.js'></script>
+        <script type='text/javascript' src='../assets/map/leaflet.js'></script>
       </div>
     </div>
   </section>
